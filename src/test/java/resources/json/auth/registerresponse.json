@@ -1,0 +1,14 @@
+{
+  "data": {
+    "nombre": "Carlos Zambrano QA",
+    "email": "mdasmat@gmail.com",
+    "password": "$2y$10$6H4VxnpXD82MW5m78nqdg.X7CI7EaAPkJRU.sbV.b/.8yHz4IJVD2",
+    "estado": 1,
+    "tipo_usuario_id": 1,
+    "updated_at": "2026-03-25T01:28:02.000000Z",
+    "created_at": "2026-03-25T01:28:02.000000Z",
+    "id": 388
+  },
+  "access_token": "1349|84xDCkByfrnoekBRZkowS2UM2ZGHs5nlN2L528ng",
+  "token_type": "Bearer"
+}
