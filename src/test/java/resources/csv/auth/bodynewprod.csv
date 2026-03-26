@@ -1,5 +1,5 @@
 n,codigo,nombre,medida,marca,categoria,precio,stock,estado,descripcion
-1,CP0001,Laptop HP,UND,Generico,Repuestos,3500.00,48,3,Ploma 14 pulgadas
-2,CP0002,Smartphone Samsung,UND,Generico,Repuestos,2500.00,100,3,Rojo 6.5 pulgadas
-3,CP0003,Tablet Apple,UND,Generico,Repuestos,4500.00,30,3,Blanca 10 pulgadas
-4,CP0004,Monitor LG,UND,Generico,Repuestos,1500.00,20,3,Negro 24 pulgadas
+1,CP200,Laptop HP,UND,Generico,Repuestos,3500.00,48,3,Ploma 14 pulgadas
+2,CP201,Smartphone Samsung,UND,Generico,Repuestos,2500.00,100,3,Rojo 6.5 pulgadas
+3,CP202,Tablet Apple,UND,Generico,Repuestos,4500.00,30,3,Blanca 10 pulgadas
+4,CP203,Monitor LG,UND,Generico,Repuestos,1500.00,20,3,Negro 24 pulgadas

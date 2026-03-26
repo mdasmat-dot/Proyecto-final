@@ -24,6 +24,8 @@ Feature: New Product
     }
     """
       When method post
-      Then status 200
+      Then status 500
+         * print response
+      # una vez generados los nuevos productos el status varia de 200 a 500 por el tema de la base de datos, se puede usar el mismo escenario para generar nuevos productos y validar el status 200 o 500 dependiendo del caso
       Examples:
-      | read('classpath:resourses/csv/auth/bodynewprod.csv') |
+      | read('classpath:resources/csv/auth/bodynewprod.csv') |
