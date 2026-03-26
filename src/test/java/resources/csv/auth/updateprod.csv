@@ -1,6 +1,6 @@
-idproducto,n,codigo,nombre,medida,marca,categoria,precio,stock,estado,descripcion
-550,1,Compac20,Notebook,UND,Compact,Accesorio,8002.01,11,4,Negra 5 pulgadas
-551,2,Galxi13,Celular,UND,Samsumg,Repuesto,8003.02,12,3,rojo7 pulgadas
+idprod,n,codigo,nombre,medida,marca,categoria,precio,stock,estado,descripcion
+560,1,Compac20,Notebook,UND,Generico,Repuestos,"8002.01","11","4",Negra 5 pulgadas
+561,2,Galxi13,Celular,UND,Generico,Repuestos,"8003.02","12","3",rojo 7 pulgadas
 
 
 
