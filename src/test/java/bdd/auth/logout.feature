@@ -1,7 +1,7 @@
 Feature: Logout
   Background:
     Given url "https://api.qateamperu.com"
-    * def loginresponse = call read('classpath:bdd/auth/loginAuth.feature@CP01')
+    * def loginresponse = call read('classpath:bdd/auth/registerAuth.feature@CPregistro')
     * print loginresponse
     * def tokendeautorizacion = loginresponse.response.access_token
     * print tokendeautorizacion

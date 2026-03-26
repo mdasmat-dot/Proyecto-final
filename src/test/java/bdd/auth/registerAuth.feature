@@ -4,9 +4,10 @@ Feature: Registro
     * def respuestadelregistro = read('classpath:resources/json/auth/validacionderegistro.json')
     Given url "https://api.qateamperu.com"
 
-@ CPregistro
+@CPregistro
 Scenario Outline: CP0<n> - usuario <usuario>-Registro
-  # email dinamico para evitar que el mismo correo se registre mas de una vez
+  # Dos casos de prueba
+  # email dinamico para evitar que el mismo correo se registre mas de una vez sino se bloquea el registro
   * def random = Math.floor(Math.random() * 100000)
   * set registrobody.email = 'qa' + random + '@mail.com'
   # mapear datos del Examples
@@ -45,7 +46,7 @@ Then status 200
 |1|mario|23456789|Mario|2|1|
 |2|carlos|12345678|Carlos|1|5|
   #el password debe tener mas de 8 caracteres para que el registro sea exitoso, por eso el segundo caso es negativo
-
+  # el token de autorizacion de la ultima iteracion se guarda para usarlo en el logout.feature
 
 
 
