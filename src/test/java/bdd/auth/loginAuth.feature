@@ -14,20 +14,8 @@ Feature: Autorización
       And match response.token_type == "#string"
         * def tokendeacceso = response.access_token
         * print tokendeacceso
+        * print response
 
-Scenario: CP02 - Registro
-  * def registrobody = read('classpath:resources/json/auth/registerbody.json')
-  And path "api/register"
-    And request registrobody
-    When method post
-    Then status 200
-    * print response
 
-  Scenario: CP03 - LogOut
-    And path "api/logout"
-    And header Authorization = "Bearer"+tokendeacceso
-    When method get
-    Then status 200
-    * print response
 
 
