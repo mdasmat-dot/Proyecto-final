@@ -4,7 +4,7 @@ Feature: Registro
     * def respuestadelregistro = read('classpath:resources/json/auth/validacionderegistro.json')
     Given url "https://api.qateamperu.com"
 
-@CPregistro
+@automation-api
 Scenario Outline: CP0<n> - usuario <usuario>-Registro
   # Dos casos de prueba
   # email dinamico para evitar que el mismo correo se registre mas de una vez sino se bloquea el registro

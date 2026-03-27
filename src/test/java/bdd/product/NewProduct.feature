@@ -1,12 +1,12 @@
 Feature: New Product
   Background:
-    * def nuevoprodresponse = call read('classpath:bdd/auth/loginAuth.feature@CP03')
+    * def nuevoprodresponse = call read('classpath:bdd/auth/loginAuth.feature@automation-api')
     * print nuevoprodresponse
     * def token = nuevoprodresponse.response.access_token
     * print token
     Given url "https://api.qateamperu.com"
-
-    Scenario Outline: CP<n> - Create new product
+@automation-api
+    Scenario Outline: CP<n> - Crear nuevo producto: <nombre>
       And path "api/v1/producto"
       And header Authorization = "Bearer "+token
       And request

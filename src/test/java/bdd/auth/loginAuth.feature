@@ -20,15 +20,15 @@ Feature: Autorización
         Examples:
   |n|email|password|Logintest|
   |1|pilarsant@gmail.com|pilar1234|Login incorrecto |
-  |2|carlosqateam@gmail.com|carlos123|Login correcto|
+  |2|mdasmat12@gmail.com|123456723448|Login correcto|
 
       # CP03 Escenario Login correcto para ser usado en el  en el cambio de contraseña
 
-  @CP03
+  @automation-api
   Scenario: CP03- Login correcto para uso en logout y cambio de contraseña
 
     And path "api/login"
-    And request {"email": "carlosqateam@gmail.com", "password": "carlos123"}
+    And request {"email": "mdasmat12@gmail.com", "password": "123456723448"}
     When method post
     Then status 200
     * def tokendeacceso = response.access_token

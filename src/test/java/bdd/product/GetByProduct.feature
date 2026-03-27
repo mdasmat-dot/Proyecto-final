@@ -2,9 +2,10 @@ Feature: Get Product
   Background:
     Given url "https://api.qateamperu.com"
 
-    Scenario Outline: CP<n> - Get producto por codigo codigo producto #<idproducto>
+  @automation-api
+    Scenario Outline: CP<n> - Get producto por codigo  producto #<idproducto>
       And path "api/v1/producto/"+<idproducto>
-       * def getprodresponse = call read('classpath:bdd/auth/loginAuth.feature@CP03')
+       * def getprodresponse = call read('classpath:bdd/auth/loginAuth.feature@automation-api')
        * print getprodresponse
        * def token = getprodresponse.response.access_token
        * print token

@@ -1,9 +1,9 @@
 Feature: Update Product
   Background:
     Given url "https://api.qateamperu.com"
-
+@automation-api
     Scenario Outline: CP<n> - Update product con id producto #<idprod>
-      * def updateprodresponse = call read('classpath:bdd/auth/loginAuth.feature@CP03')
+      * def updateprodresponse = call read('classpath:bdd/auth/loginAuth.feature@automation-api')
       * print updateprodresponse
       * def token = updateprodresponse.response.access_token
       * print token
